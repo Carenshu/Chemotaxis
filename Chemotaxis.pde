@@ -1,13 +1,13 @@
 
 Bacteria walks;
-Bacteria bill;
+
 
  void setup()   
  {   
     size(250,250);  
     
          walks = new Bacteria ();
-         bill = new Bacteria();
+         
          bacX=(int) (Math.random()*150);
          bacY=(int) (Math.random()*150);
          
@@ -17,19 +17,19 @@ Bacteria bill;
          walks.move();
          walks.show();
          
-         bill.move();
-         bill.show();
+        
          //move and show the bacteria   
  }  
- int bacX, bacY;
+ int bacX, bacY, bacColour;
  class Bacteria    
  {     
          //lots of java! 
         
-        void Bac (int x, int y)
+        void Bac (int x, int y, int colour)
         {
                 bacX=x;
                 bacY=y;
+                bacColour= colour;
                 move();
         }
         void move() 
@@ -40,11 +40,12 @@ Bacteria bill;
          } 
         void show ()
         {
-                int ran =(int)(Math.random()*255); 
-    noStroke();
-    fill(ran,0,ran);
+             //int ran =(int)(Math.random()*255); 
+            noStroke();
+            fill(bacColour,0,0);
                 ellipse(bacX,bacY, 10,10);
         }
          
 
+ 
  }    
