@@ -1,22 +1,28 @@
 
-Bacteria walks;
+Bacteria [] walks= {new Bacteria(),};
 
 
  void setup()   
  {   
     size(250,250);  
     
-         walks = new Bacteria ();
-         
+         //walks = new Bacteria ();
+         for (int i=0; i<walks.length; i++)
+			{
+			   walks [i]= new Bacteria ();
+			}
          bacX=(int) (Math.random()*150);
          bacY=(int) (Math.random()*150);
          
  }   
  void draw()   
  {    
-         walks.move();
-         walks.show();
-         
+ 	background(21, 255, 10, .1);
+ 	for (int i=0; i<walks.length; i++)
+			{
+         walks[i].move();
+         walks[i].show();
+         }
         
          //move and show the bacteria   
  }  
