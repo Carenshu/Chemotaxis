@@ -1,5 +1,5 @@
 
-Bacteria [] walks= {new Bacteria(),};
+Bacteria [] walks= {};
 
 
  void setup()   
@@ -7,26 +7,30 @@ Bacteria [] walks= {new Bacteria(),};
     size(250,250);  
     
          //walks = new Bacteria ();
+         walks= new Bacteria[5];
          for (int i=0; i<walks.length; i++)
-			{
-			   walks [i]= new Bacteria ();
-			}
-         bacX=(int) (Math.random()*150);
-         bacY=(int) (Math.random()*150);
+                        {
+                           walks [i]= new Bacteria ();
+                           
+                        }
+
+         bacX=100;
+         bacY=100;
          
  }   
  void draw()   
  {    
- 	background(21, 255, 10, .1);
- 	for (int i=0; i<walks.length; i++)
-			{
+         background(255);
+         for (int i=0; i<walks.length; i++)
+        {
          walks[i].move();
          walks[i].show();
          }
         
          //move and show the bacteria   
  }  
- int bacX, bacY, bacColour;
+ int bacX, bacY;
+int bacColour= color((int)Math.random()*255,(int)Math.random()*255,(int)Math.random()*255);
  class Bacteria    
  {     
          //lots of java! 
@@ -46,12 +50,12 @@ Bacteria [] walks= {new Bacteria(),};
          } 
         void show ()
         {
-             //int ran =(int)(Math.random()*255); 
+             
             noStroke();
-            fill(bacColour,0,0);
-                ellipse(bacX,bacY, 10,10);
-        }
+            fill(bacColour);
+            ellipse(bacX,bacY, 10,10);
+                
          
-
+}
  
  }    
