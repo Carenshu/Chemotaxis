@@ -4,7 +4,7 @@ Bacteria [] walks;
 
  void setup()   
  {   
-    size(250,250);  
+    size(500,500);  
     
     walks= new Bacteria[5];
     for (int i=0; i<walks.length; i++)
