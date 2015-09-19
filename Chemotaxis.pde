@@ -6,7 +6,7 @@ Bacteria [] walks;
  {   
     size(400,400);  
     
-    walks= new Bacteria[5];
+    walks= new Bacteria[10];
     for (int i=0; i<walks.length; i++)
      {
       walks [i]= new Bacteria ();
