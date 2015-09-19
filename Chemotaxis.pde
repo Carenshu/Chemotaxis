@@ -18,7 +18,7 @@ Bacteria [] walks;
  }   
  void draw()   
  {    
-        background(255);
+        background(0);
          for (int i=0; i<walks.length; i++)
         {
          walks[i].move();
