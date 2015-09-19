@@ -4,7 +4,7 @@ Bacteria [] walks;
 
  void setup()   
  {   
-    size(500,500);  
+    size(400,400);  
     
     walks= new Bacteria[5];
     for (int i=0; i<walks.length; i++)
@@ -35,8 +35,8 @@ Bacteria [] walks;
 int bacColour= color((int)Math.random()*255,(int)Math.random()*255,(int)Math.random()*255);
         void Bac ()
         {
-                bacX=150;
-        		      bacY=150;
+                bacX=200;
+        		      bacY=200;
                 
                 move();
         }
