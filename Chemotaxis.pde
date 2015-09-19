@@ -35,8 +35,8 @@ Bacteria [] walks;
 int bacColour= color((int)Math.random()*255,(int)Math.random()*255,(int)Math.random()*255);
         void Bac ()
         {
-                bacX=100;
-        		bacY=100;
+                bacX=150;
+        		      bacY=150;
                 
                 move();
         }
@@ -44,7 +44,7 @@ int bacColour= color((int)Math.random()*255,(int)Math.random()*255,(int)Math.ran
          {
                  bacX = bacX+ (int) (Math.random()*3)-1;
                  bacY =bacY + (int) (Math.random()*3)-1;
-                //bacY=100;
+                
          } 
         void show ()
         {
