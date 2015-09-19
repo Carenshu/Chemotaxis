@@ -31,7 +31,7 @@ Bacteria [] walks;
  class Bacteria    
  {     
          //lots of java! 
-        int bacX=200, 
+        int bacX=200; 
         int bacY=200;
 int bacColour= color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
         void Bac ()
