@@ -9,9 +9,9 @@ Bacteria [] walks;
     walks= new Bacteria[5];
     for (int i=0; i<walks.length; i++)
      {
-                           walks [i]= new Bacteria ();
+      walks [i]= new Bacteria ();
                            
-                        }
+     }
 
          
          
@@ -42,8 +42,8 @@ int bacColour= color((int)Math.random()*255,(int)Math.random()*255,(int)Math.ran
         }
         void move() 
          {
-                 bacX = bacX+ (int) (Math.random()*3)-1;
-                 bacY =bacY + (int) (Math.random()*3)-1;
+                 bacX = bacX+ (int) (Math.random()*5)-1;
+                 bacY =bacY + (int) (Math.random()*5)-1;
                 
          } 
         void show ()
