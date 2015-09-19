@@ -44,8 +44,8 @@ int bacColour= color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Mat
         void move() 
          {
                
-                 bacX = bacX+ (int) (Math.random()*10)-5;
-                 bacY =bacY + (int) (Math.random()*10)-5;
+                 bacX = bacX+ (int) (Math.random()*9)-4;
+                 bacY =bacY + (int) (Math.random()*9)-4;
                 
          } 
         void show ()
